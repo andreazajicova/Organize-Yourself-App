@@ -1,0 +1,23 @@
+li {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+input[type='checkbox'] {
+  margin-right: 20px;
+}
+
+.App__delete {
+  margin-left: 20px;
+}
+
+.App__toggle {
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .App__toggle, .App__delete {
+    background-color: #264653;
+    color: white;
+  }
+}
