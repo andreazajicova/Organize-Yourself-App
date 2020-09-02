@@ -1,9 +1,10 @@
 import React from 'react';
+import Draggable from 'react-draggable';
 import './stylesheet/TodoCard.css';
 
 const TodoCard = props => {
     return (
-       
+       <Draggable>
         <li 
             onChange={props.toggleTodo} 
             style={{ textDecoration: props.done ? 'line-through' : '' }} 
@@ -21,6 +22,7 @@ const TodoCard = props => {
                 Delete
             </button>
         </li>
+        </Draggable>
               
     )
 }
